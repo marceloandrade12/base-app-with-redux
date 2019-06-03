@@ -29,7 +29,7 @@ class FirstScreen extends React.Component<IProps, InternalState> {
         }
     }
 
-    render() { 
+    public render(): JSX.Element { 
         return (
         <div style={{textAlign:'center'}}>
             <p>Value stored:</p> 
@@ -41,7 +41,7 @@ class FirstScreen extends React.Component<IProps, InternalState> {
         );
     }
 
-    private setValue = (e:any) =>{
+    private setValue = (e:any): void =>{
         this.setState({value: e.target.value})
     };
 }

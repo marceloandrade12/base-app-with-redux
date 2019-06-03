@@ -12,7 +12,7 @@ const appReducers = combineReducers({
 const store = createStore(appReducers,composeWithDevTools());
 
 class App extends React.Component {
-  render() {
+  render(): JSX.Element {
     return (
       <Provider store={store}>
         <FirstScreen />
